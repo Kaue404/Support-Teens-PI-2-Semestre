@@ -134,6 +134,14 @@ footer {
 
 .footer {
     margin-top: auto;
+    padding-bottom: 2%;
+}
+
+.footer-table tr,
+.footer-table tr a {
+    text-align: left;
+    font-family: 'Noto Sans';
+    color: black;
 }
 
 .footer-table {

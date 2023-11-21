@@ -2,167 +2,140 @@
 <html lang="pt-BR">
 
 <head>
-    <link rel="icon" href="/public/svg_diario/logo.svg" type="image/x-icon">
-    <title>Contato</title>
-    <link rel="stylesheet" href="/code/Contato.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/public/logo.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Contato.css">
 
-    <style>
-        /* Estilização das caixas de entrada */
-        input[type="text"] {
-            top: 400px;
-            left: 50px;
-            width: 821px;
-            height: 61px;
-            -ms-border-radius: 10px;
-            -o-border-radius: 10px;
-            -moz-border-radius: 10px;
-            -webkit-border-radius: 10px;
-            border-radius: 10px;
-            background: rgba(217, 217, 217, 1);
-            font-family: 'Noto Sans';
-            font-size: 30px;
-            position: absolute;
-            border: none;
-        }
 
-        input[type="email"] {
-            width: 300px;
-            top: 475px;
-            left: 50px;
-            width: 821px;
-            height: 61px;
-            -ms-border-radius: 10px;
-            -o-border-radius: 10px;
-            -moz-border-radius: 10px;
-            -webkit-border-radius: 10px;
-            border-radius: 10px;
-            background: rgba(217, 217, 217, 1);
-            font-family: 'Noto Sans';
-            font-size: 30px;
-            position: absolute;
-            border: none;
-        }
-
-        input[type="text"]:focus,
-        input[type="email"]:focus {
-            outline: none;
-        }
-
-        textarea {
-            top: 550px;
-            left: 50px;
-            width: 714px;
-            height: 156px;
-            -ms-border-radius: 10px;
-            -o-border-radius: 10px;
-            -moz-border-radius: 10px;
-            -webkit-border-radius: 10px;
-            border-radius: 10px;
-            background: rgba(217, 217, 217, 1);
-            font-family: 'Noto Sans';
-            font-size: 30px;
-            position: absolute;
-            resize: none;
-            border: none;
-        }
-
-        textarea:focus {
-            outline: none;
-        }
-
-        /* Estilização do botão */
-        .enviar {
-            top: 585px;
-            left: 810px;
-            width: 92px;
-            height: 92px;
-            background-color: #9CF0BA;
-            position: absolute;
-            -ms-border-radius: 46px / 46px;
-            -o-border-radius: 46px / 46px;
-            -moz-border-radius: 46px / 46px;
-            -webkit-border-radius: 46px / 46px;
-            border-radius: 46px / 46px;
-            border-color: #a1f1c0;
-        }
-
-        p {
-            font-family: 'Noto Sans';
-        }
-    </style>
-
+    <title>Contato</title>
 </head>
 
 <body>
 
-    <header>
-        <header>
-            <container class="header-logo">
-                <img src="/public/svg_diario/logo.svg" alt="Logo: aperto de mãos">
-                <h1>Support Teens</h1>
-            </container>
-            </container>
-            <container class="header-buttons">
-                <button><a href="index.html" style="text-decoration: none; color: black;">Home
-                    </a></button>
-                <button><a href="cadastro.html" style="text-decoration: none; color: black;">Cadastro
-                    </a></button>
-                <button><a href="HomeChat.html" style="text-decoration: none; color: black;">Chat
-                    </a></button>
-                <button><a href="Descritiva.html" style="text-decoration: none; color: black;">Descritiva
-                    </a></button>
-                <button><a href="Contato.html" style="text-decoration: none; color: black;">Contato
-                    </a></button>
-                <button><a href="sobre.html" style="text-decoration: none; color: black;">Sobre
-                    </a></button>
-                <button><a href="home_diario.html" style="text-decoration: none; color: black;">Diário
-                    </a></button>
-                <button><a href="perfil.html"><img src="/public/svg_diario/icon_profile-backgroud.svg"
-                            alt="Perfil"></a></button>
-            </container>
-        </header>
+    <header class="fixed-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="/public/svg_diario/logo.svg" alt="Logo: aperto de mãos" height="30"
+                    class="d-inline-block align-top">
+                Support Teens
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro.html">Cadastro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="HomeChat.html">Chat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Descritiva.html">Descritiva</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home_diario.html">Diário</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="perfil.html">Perfil</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <div class="rectangle_85">
-        <h2 style="font-size: 64px; font-weight: 400; top: -45px; left: 292px; position: absolute;">
-            Contate-nos</h2>
 
-        <img src="/public/img_kaue/location-on-map.svg"
-            style=" top: 105px; left: 50px; width: 64.89px; height: 64.88px; position: absolute;">
-        <h1 style="	top: 105px; left: 150px; position: absolute; font-size: 32px; font-weight: 400;">
-            Franca - SP</h1>
 
-        <img src="/public/img_kaue/PhoneCall.png"
-            style=" top: 207px; left: 50px; width: 64.89px; height: 64.88px; position: absolute;">
-        <h1 style="display: inline;	top: 207px; left: 150px; font-size: 32px; font-weight: 400; position: absolute;">
-            (16) 99991-1025</h1>
+    <div class="container">
+        <div class="rectangle_85">
+            <h2 style="text-align: center;">Contate-nos</h2>
 
-        <img src="/public/img_kaue/google-svgrepo-com.svg"
-            style=" top: 309px; left: 50px; width: 64.89px; height: 64.88px; position: absolute;">
-        <h1 style="	top: 306px; left: 150px; font-size: 32px; font-weight: 400; position: absolute;">
-            SupportTeens@gmail.com</h1>
-        <div id="app">
-            <div>
-                <label for="nome"></label>
-                <input type="text" id="nome" v-model="nome" placeholder="Nome">
+            <div style="text-align: center;">
+                <img src="/public/img_kaue/location-on-map.svg" style="height: 50px; width: 50px;">
+                <p>Franca - SP</p>
+
+                <img src="/public/img_kaue/PhoneCall.png" style="height: 50px; width: 50px;">
+                <p>(16) 99991-1025</p>
+
+                <img src="/public/img_kaue/google-svgrepo-com.svg" style="height: 50px; width: 50px;">
+                <p>SupportTeens@gmail.com</p>
             </div>
-            <div>
-                <label for="email"></label>
-                <input type="email" id="email" v-model="email" placeholder="Email">
-            </div>
-            <div>
-                <label for="texto"></label>
-                <textarea id="texto" v-model="texto" placeholder="Digite seu texto"></textarea>
-            </div>
-            <button class="enviar" @click="enviarFormulario"> <img src="/public/img_kaue/icons8-enviar-90.png"
-                    style="margin-top: 2px; margin-left: -7px; width: 70px; height: 70px;"></button>
+
+            <form id="app">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" v-model="nome" class="form-control" placeholder="Nome">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" v-model="email" class="form-control" placeholder="Email">
+                </div>
+
+                <div class="form-group">
+                    <label for="texto">Mensagem</label>
+                    <textarea id="texto" v-model="texto" class="form-control" placeholder="Digite sua mensagem"
+                        style="resize: none;"></textarea>
+                </div>
+
+                <button type="button" class="enviar" @click="enviarFormulario">
+                    <img src="/public/img_kaue/icons8-enviar-90.png">
+                </button>
+            </form>
         </div>
     </div>
 
+    <footer class="footer bg-dark text-light mt-4">
+        <div class="container">
+            <table class="footer-table">
+                <tbody>
+                    <tr>
+                        <th>Institucional</th>
+                        <th>Contate-nos</th>
+                        <th>Acessibilidade</th>
+                        <th>Minha conta</th>
+                        <th>Privacy Policy</th>
+                        <th>Siga-nos</th>
+                    </tr>
+                    <tr>
+                        <td><a href="sobre.html">Sobre nós</a></td>
+                        <td><a href="mailto:">Email</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Contato.html">Trabalhe Conosco</a></td>
+                        <td>Whatsapp</td>
+                    </tr>
+                    <tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </footer>
+
+
+    <div class="rectangle_footer">
+        <p style="color: black;">@Copyright Support Teens 2023 -
+            Todos os
+            direitos
+            reservados.</p>
+    </div>
+
+
+
     <!-- Caixas de Texto -->
-
-
 
     <script>
         new Vue({
@@ -181,6 +154,13 @@
             }
         })
     </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+
 </body>
 
 </html>
